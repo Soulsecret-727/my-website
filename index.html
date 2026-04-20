@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Practical</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body{
+            font-family: Arial;
+            background:#f4f4f4;
+            padding:30px;
+        }
+        .box{
+            background:white;
+            padding:20px;
+            width:280px;
+            margin:auto;
+            text-align:center;
+        }
+        button{
+            margin:5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h3 id="heading">Hello Students</h3>
+
+    <button id="btnHide">Hide</button>
+    <button id="btnShow">Show</button>
+    <button id="btnText">Change Text</button>
+    <button id="btnColor">Change Color</button>
+</div>
+
+<script>
+$(document).ready(function(){
+
+    $("#btnHide").click(function(){
+        $("#heading").hide();
+    });
+
+    $("#btnShow").click(function(){
+        $("#heading").show();
+    });
+
+    $("#btnText").click(function(){
+        $("#heading").text("Text Changed using jQuery");
+    });
+
+    $("#btnColor").click(function(){
+        $("#heading").css("color","blue");
+    });
+
+});
+</script>
+
+</body>
+</html>
